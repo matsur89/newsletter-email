@@ -1,0 +1,259 @@
+/* Font-Family: 'Playfair Display', Serif;
+Font-Size: 48px;
+Font-Family: 'Source Sans Pro', Sans-Serif;
+Font-Size: 16px; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    Font-Size: 16px;
+    color: #333;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+h1 {
+    Font-Family: 'Playfair Display', Serif;
+    Font-Size: 48px;
+    color: #5e7c74;
+    font-style: italic;
+}
+
+h2 {
+    Font-Family: 'Playfair Display', Serif;
+    Font-Size: 36px;
+    color: #5e7c74;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    /* background-color: #F2EFD9; */
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.bg-pattern-1 {
+    background-image: url(/images/1x/eucapytus\ leaves.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-pattern-2 {
+    background-image: url(/images/1x/roses\ bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.acc {
+    align-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.ma-1 {
+    margin: 10px;
+}
+
+.ma-2 {
+    margin: 20px;
+}
+
+.ma-3 {
+    margin: 30px;
+}
+
+.mato-1 {
+    margin: 10px 0;
+}
+
+.mato-2 {
+    margin: 20px 0;
+}
+
+.mato-3 {
+    margin: 30px 0;
+}
+
+.pa-1 {
+    padding: 10px;
+}
+
+.pa-2 {
+    padding: 20px;
+}
+
+.pa-3 {
+    padding: 30px;
+}
+
+/* Main section */
+
+section.main {
+    padding: 0 30px;
+    margin: 0;
+    justify-content: center;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+}
+
+.gazol-img {
+    border-radius: 10%;
+    margin-inline: auto;
+}
+
+section.about-me a {
+    color: #5e7c74;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* Bad brows section */
+
+section.bad-brows {
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+section.bad-brows-text {
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.list-items {
+    width: 70%;
+}
+
+/* Fix your brows section */
+
+section.fix-your-brows-text {
+    padding-bottom: 0;
+}
+
+section.fix-your-brows-text a {
+    text-decoration: none;
+    color: #5e7c74;
+    font-weight:900;
+}
+
+.section-container a {
+    margin-inline: auto;
+}
+
+/* Button */
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-outline-dark {
+    font: inherit;
+    padding: 0.25rem 1.4rem;
+    border-radius: 20px;
+    border: 0.5px solid #999;
+    background: transparent;
+    position: relative;
+    bottom: 50px;
+    transition: 0.5s;
+}
+
+.btn-outline-dark:hover {
+    font: inherit;
+    padding: 0.25rem 1.4rem;
+    border-radius: 20px;
+    border: 0.5px solid transparent;
+    background: #5e7c74;
+    color: #fff;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+/* RMV section */
+
+section.rmv-1,
+section.rmv-2 {
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* Goodbye section */
+
+section.goodbye {
+    background-image: url(/images/1x/eucapytus\ leaves.png);
+    background-size: cover;
+}
+
+
+/* Footer */
+
+footer {
+    background-image: url(/images/1x/footer\ bg.png);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10p;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    section.main,
+    section.bad-brows,
+    section.rmv-1,
+    section.rmv-2 {
+        flex-direction: column;
+    }
+
+    section.main img {
+        width: 50%;
+        display: inline-block;
+    }
+
+    body {
+        text-align: center;
+        line-height: 2;
+    }
+
+    ul {
+        text-align:left;
+    }
+}
